@@ -41,6 +41,7 @@ class NavigationTest {
         onView(withId(R.id.bnToThird)).check(doesNotExist())
         openContextualActionModeOverflowMenu()
         onView(withText(R.string.activity_about)).check(matches(isDisplayed()))
+
         pressBack()
     }
 
