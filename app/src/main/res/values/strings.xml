@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">lab3</string>
+    <string name="to_second">To second</string>
+    <string name="to_first">To first</string>
+    <string name="to_third">To third</string>
+    <string name="information">Name: Pham Ba Nam\n Group: 3530901/90001</string>
+    <string name="activity_about">Activity About</string>
+    <string name="activity_1">Activity 1</string>
+    <string name="activity_2">Activity 2</string>
+    <string name="activity_3">Acativity3</string>
+</resources>
