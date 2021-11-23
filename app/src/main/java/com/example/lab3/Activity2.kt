@@ -13,7 +13,7 @@ class Activity2 : BaseActivity() {
         binding = Activity2Binding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.bnToFirst.setOnClickListener {
-            finish()
+            switchToActivity1()
         }
         binding.bnToThird.setOnClickListener {
            switchToActivity3()
@@ -30,6 +30,10 @@ class Activity2 : BaseActivity() {
         val intent = Intent(this, Activity3::class.java)
         startActivityForResult(intent,1  )
     }
-
+    private fun switchToActivity1(){
+        val intent = Intent(this,MainActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+        startActivity(intent)
+    }
 
 }
